@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class enemyencount : MonoBehaviour
 {
-    [SerializeField]
+    GameObject go;
     AudioSource audios;
+    bool IsEncount = false;
 
     public AudioClip[] clips;
     int i = 0;
@@ -24,7 +25,10 @@ public class enemyencount : MonoBehaviour
 
     void Start()
     {
-        audios = GetComponent<AudioSource>();
+        go = GameObject.Find("FieldAudio");
+
+        audios = go.GetComponent<AudioSource>();
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -44,10 +48,13 @@ public class enemyencount : MonoBehaviour
                 audios.Play();
 
                 // 動かなくしたい
+                IsEncount = true;
+
 
             }
             else {
                 Debug.Log("出現なし");
+                IsEncount = false;
             }
         }
     }

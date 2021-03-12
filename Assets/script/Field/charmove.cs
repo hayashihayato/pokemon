@@ -21,6 +21,10 @@ public class charmove : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
+    // void Awake () {
+	//     DontDestroyOnLoad(gameObject);
+    // }
+
     void Update()
     {
         if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0)

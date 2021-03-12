@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class enemyencount : MonoBehaviour
 {
+    [SerializeField]
+    charmove cmsc;
     GameObject go;
     AudioSource audios;
-    bool IsEncount = false;
 
     public AudioClip[] clips;
     int i = 0;
@@ -29,6 +30,8 @@ public class enemyencount : MonoBehaviour
 
         audios = go.GetComponent<AudioSource>();
 
+        cmsc = GameObject.Find("player").GetComponent<charmove>();
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -48,13 +51,12 @@ public class enemyencount : MonoBehaviour
                 audios.Play();
 
                 // 動かなくしたい
-                IsEncount = true;
-
+                cmsc.IsEncount = true;
 
             }
             else {
                 Debug.Log("出現なし");
-                IsEncount = false;
+                cmsc.IsEncount = false;
             }
         }
     }

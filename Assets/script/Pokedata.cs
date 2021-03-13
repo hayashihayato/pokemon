@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "MyScriptable/Create EnemyData")]
-public class EnemyData : ScriptableObject {
+[CreateAssetMenu(menuName = "MyScriptable/Create PokeData")]
+public class PokeData : ScriptableObject {
 	public string PokeName;
 	public int maxHp;
 	public int atk;

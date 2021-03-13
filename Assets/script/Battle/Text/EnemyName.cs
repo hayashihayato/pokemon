@@ -9,7 +9,7 @@ public class EnemyName : MonoBehaviour
     Text ctext;
     void Start()
     {
-        ctext.text = "Giratina";
+        ctext.text = "";
     }
     void Update()
     {

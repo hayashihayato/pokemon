@@ -40,7 +40,7 @@ public class EnemyState : MonoBehaviour
 
     void Find()
     {
-        int PokeID = PlayerPrefs.GetInt("SCORE");
+        int PokeID = PlayerPrefs.GetInt("ENCID");
         pokedata = Resources.Load<PokeStatusData>("PokeStatusData");
         pokestatus = pokedata.PokeStatusList[PokeID];
         /*var guids = UnityEditor.AssetDatabase.FindAssets("t:PokeStatusData");

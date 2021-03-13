@@ -22,7 +22,16 @@ MonoBehaviour:
     spdef: 0
     speed: 0
     image: {fileID: 0}
-  - Name: 
+  - Name: Bulbasaur
+    ID: 1
+    maxHp: 0
+    atk: 0
+    def: 0
+    spatk: 0
+    spdef: 0
+    speed: 0
+    image: {fileID: 21300000, guid: 137928eab3316dc4294a3a20b3fc1b58, type: 3}
+  - Name: Ivysaur
     ID: 0
     maxHp: 0
     atk: 0
@@ -30,8 +39,8 @@ MonoBehaviour:
     spatk: 0
     spdef: 0
     speed: 0
-    image: {fileID: 0}
-  - Name: 
+    image: {fileID: 21300000, guid: 4254412479fd25647b924e9117215ab9, type: 3}
+  - Name: Venusaur
     ID: 0
     maxHp: 0
     atk: 0
@@ -39,8 +48,8 @@ MonoBehaviour:
     spatk: 0
     spdef: 0
     speed: 0
-    image: {fileID: 0}
-  - Name: 
+    image: {fileID: 21300000, guid: afa56f63f56116745a8a357785419e80, type: 3}
+  - Name: Charmander
     ID: 0
     maxHp: 0
     atk: 0
@@ -48,8 +57,8 @@ MonoBehaviour:
     spatk: 0
     spdef: 0
     speed: 0
-    image: {fileID: 0}
-  - Name: 
+    image: {fileID: 21300000, guid: e4a75cd771243f44990534ebfa45803f, type: 3}
+  - Name: Charmeleon
     ID: 0
     maxHp: 0
     atk: 0
@@ -57,8 +66,8 @@ MonoBehaviour:
     spatk: 0
     spdef: 0
     speed: 0
-    image: {fileID: 0}
-  - Name: 
+    image: {fileID: 21300000, guid: 5ba1d46572034594a91ecbca5176e051, type: 3}
+  - Name: Charizard
     ID: 0
     maxHp: 0
     atk: 0
@@ -66,8 +75,8 @@ MonoBehaviour:
     spatk: 0
     spdef: 0
     speed: 0
-    image: {fileID: 0}
-  - Name: 
+    image: {fileID: 21300000, guid: da19fd1ac8fa0114681f7dfcc97588c6, type: 3}
+  - Name: Squirtle
     ID: 0
     maxHp: 0
     atk: 0
@@ -75,8 +84,8 @@ MonoBehaviour:
     spatk: 0
     spdef: 0
     speed: 0
-    image: {fileID: 0}
-  - Name: 
+    image: {fileID: 21300000, guid: 9928b29426d34984fb19d39dca3e1cc7, type: 3}
+  - Name: Wartortle
     ID: 0
     maxHp: 0
     atk: 0
@@ -84,8 +93,8 @@ MonoBehaviour:
     spatk: 0
     spdef: 0
     speed: 0
-    image: {fileID: 0}
-  - Name: 
+    image: {fileID: 21300000, guid: 13c57196826afaf48872293db8c69439, type: 3}
+  - Name: Blastoise
     ID: 0
     maxHp: 0
     atk: 0
@@ -93,16 +102,7 @@ MonoBehaviour:
     spatk: 0
     spdef: 0
     speed: 0
-    image: {fileID: 0}
-  - Name: 
-    ID: 0
-    maxHp: 0
-    atk: 0
-    def: 0
-    spatk: 0
-    spdef: 0
-    speed: 0
-    image: {fileID: 0}
+    image: {fileID: 21300000, guid: 1067d65d3a56f554198a423e888d3c61, type: 3}
   - Name: 
     ID: 0
     maxHp: 0
@@ -4398,6 +4398,51 @@ MonoBehaviour:
     image: {fileID: 0}
   - Name: Giratina
     ID: 487
+    maxHp: 20
+    atk: 10
+    def: 10
+    spatk: 10
+    spdef: 10
+    speed: 10
+    image: {fileID: 21300000, guid: 9a8b89e2eb6d3314086d93945dd0f75c, type: 3}
+  - Name: 
+    ID: 0
+    maxHp: 20
+    atk: 10
+    def: 10
+    spatk: 10
+    spdef: 10
+    speed: 10
+    image: {fileID: 21300000, guid: 9a8b89e2eb6d3314086d93945dd0f75c, type: 3}
+  - Name: 
+    ID: 0
+    maxHp: 20
+    atk: 10
+    def: 10
+    spatk: 10
+    spdef: 10
+    speed: 10
+    image: {fileID: 21300000, guid: 9a8b89e2eb6d3314086d93945dd0f75c, type: 3}
+  - Name: 
+    ID: 0
+    maxHp: 20
+    atk: 10
+    def: 10
+    spatk: 10
+    spdef: 10
+    speed: 10
+    image: {fileID: 21300000, guid: 9a8b89e2eb6d3314086d93945dd0f75c, type: 3}
+  - Name: 
+    ID: 0
+    maxHp: 20
+    atk: 10
+    def: 10
+    spatk: 10
+    spdef: 10
+    speed: 10
+    image: {fileID: 21300000, guid: 9a8b89e2eb6d3314086d93945dd0f75c, type: 3}
+  - Name: 
+    ID: 0
     maxHp: 20
     atk: 10
     def: 10

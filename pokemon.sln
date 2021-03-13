@@ -1,4 +1,5 @@
 ﻿
+<<<<<<< HEAD
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.TestRunner", "UnityEngine.TestRunner.csproj", "{12c7551b-83be-8c56-7299-78b3b6d16ff0}"
@@ -18,9 +19,15 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.SpriteShape.Runtime", "Unity.2D.SpriteShape.Runtime.csproj", "{bad38317-d19f-b828-7bd3-627f23e048fb}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{801151da-2f07-929e-dcb8-5acd43bd0c51}"
+=======
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{DA511180-072F-9E92-DCB8-5ACD43BD0C51}"
+>>>>>>> origin/hayashi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Tilemap.Extras", "Unity.2D.Tilemap.Extras.csproj", "{f34817d9-c5e6-a8d5-fb17-d5c31555d4cc}"
 EndProject
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.PixelPerfect", "Unity.2D.PixelPerfect.csproj", "{4d456a35-0bc2-86d3-bec7-54857f1f8afb}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.InternalAPIEngineBridge.001", "Unity.InternalAPIEngineBridge.001.csproj", "{d9252136-82f1-6674-7236-d297c291e0fc}"
@@ -67,11 +74,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Tilemap.Extras.Pla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.InternalAPIEditorBridge.001", "Unity.InternalAPIEditorBridge.001.csproj", "{2ea8c25b-e62d-d51e-2011-a1ebad28aad4}"
 EndProject
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Tilemap.Extras.Editor", "Unity.2D.Tilemap.Extras.Editor.csproj", "{D1773081-E896-DD95-5D3F-87AD6A82FD90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Tilemap.Extras.Placeholder.EditorTests", "Unity.2D.Tilemap.Extras.Placeholder.EditorTests.csproj", "{9B29F418-54F6-38E4-6897-8114B18F5CEF}"
+EndProject
+>>>>>>> origin/hayashi
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD
 		{12c7551b-83be-8c56-7299-78b3b6d16ff0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{12c7551b-83be-8c56-7299-78b3b6d16ff0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17df383a-936d-ef4d-4ac4-b57f6dc8ec11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -138,6 +152,24 @@ Global
 		{18f4299b-f654-e438-6897-8114b18f5cef}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2ea8c25b-e62d-d51e-2011-a1ebad28aad4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2ea8c25b-e62d-d51e-2011-a1ebad28aad4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+=======
+		{DA511180-072F-9E92-DCB8-5ACD43BD0C51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA511180-072F-9E92-DCB8-5ACD43BD0C51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA511180-072F-9E92-DCB8-5ACD43BD0C51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA511180-072F-9E92-DCB8-5ACD43BD0C51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D91748F3-E6C5-D5A8-FB17-D5C31555D4CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D91748F3-E6C5-D5A8-FB17-D5C31555D4CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D91748F3-E6C5-D5A8-FB17-D5C31555D4CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D91748F3-E6C5-D5A8-FB17-D5C31555D4CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1773081-E896-DD95-5D3F-87AD6A82FD90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1773081-E896-DD95-5D3F-87AD6A82FD90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1773081-E896-DD95-5D3F-87AD6A82FD90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1773081-E896-DD95-5D3F-87AD6A82FD90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B29F418-54F6-38E4-6897-8114B18F5CEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B29F418-54F6-38E4-6897-8114B18F5CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B29F418-54F6-38E4-6897-8114B18F5CEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B29F418-54F6-38E4-6897-8114B18F5CEF}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> origin/hayashi
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

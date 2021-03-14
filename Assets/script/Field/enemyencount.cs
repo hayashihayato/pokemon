@@ -41,6 +41,8 @@ public class enemyencount : MonoBehaviour
                 audios.clip = clips[0];
                 audios.Play();
 
+                //プレイヤーの位置保存
+                cmsc.SetPos();
                 // 動かなくしたい
                 cmsc.IsEncount = true;
 

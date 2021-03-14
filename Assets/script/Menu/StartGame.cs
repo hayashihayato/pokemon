@@ -13,7 +13,10 @@ public class StartGame : MonoBehaviour
         audios = GetComponent<AudioSource>();
     }
 	public void GameStart() {
-		// SceneManager.LoadScene ("Field");
+        PlayerPrefs.SetFloat("PPosX", 0.5f);
+        PlayerPrefs.SetFloat("PPosY", 0.5f);
+        PlayerPrefs.Save();
+        // SceneManager.LoadScene ("Field");
         FadeManager.Instance.LoadScene ("Field", 1.0f);
 
         GameObject target1 = GameObject.Find ("TitleAudio");

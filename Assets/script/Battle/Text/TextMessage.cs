@@ -7,13 +7,21 @@ public class TextMessage : MonoBehaviour
 {
     [SerializeField]
     Text ctext;
+    PokeStatusData pokedata;
+    PokeStatus pokestatus;
 
     void Start(){
         Invoke("textsay1", 0.9f);
         Invoke("textsay2", 2f);
+        Init();
+    }
+    void Init(){
+        int PokeID = PlayerPrefs.GetInt("ENCID");
+        pokedata = Resources.Load<PokeStatusData>("PokeStatusData");
+        pokestatus = pokedata.PokeStatusList[PokeID];
     }
     void textsay1(){
-        ctext.text = "Wild Giratina appeared!";
+        ctext.text = "Wild " + pokestatus.Name + " appeared!";
     }
     void textsay2(){
         ctext.text = "What will Pikachu do?";

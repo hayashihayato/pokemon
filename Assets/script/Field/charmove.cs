@@ -53,6 +53,11 @@ public class charmove : MonoBehaviour
     {
         rig.velocity = InputAxis.normalized * Speed * run;
     }
+    void SetPos(){
+        PlayerPrefs.SetFloat("PPosX", 0.5f);
+        PlayerPrefs.SetFloat("PPosY", 0.5f);
+        PlayerPrefs.Save();
+    }
 
     void lastup()
     {

@@ -218,7 +218,7 @@ MonoBehaviour:
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: c059e2736b94ce645b7613d423c5dc50,
+          m_ObjectArgument: {fileID: 8300000, guid: b92bb8d02d2c6334fb5e0820646717f5,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
@@ -497,7 +497,7 @@ GameObject:
   - component: {fileID: 957780927}
   - component: {fileID: 957780926}
   m_Layer: 0
-  m_Name: pi
+  m_Name: PressSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -515,7 +515,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0

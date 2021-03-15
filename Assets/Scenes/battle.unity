@@ -2793,7 +2793,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d92fc34981107441a0dc19bb1109cf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clips: []
 --- !u!1 &1474982682
 GameObject:
   m_ObjectHideFlags: 0
@@ -3515,8 +3514,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc3c0021ce9db6d429acd125c5aafca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clips:
-  - {fileID: 8300000, guid: 7b2a8da03d14e2a468b07ea890e6274d, type: 3}
 --- !u!82 &1865883363
 AudioSource:
   m_ObjectHideFlags: 0

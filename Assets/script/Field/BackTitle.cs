@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class BackTitle : MonoBehaviour
 {
+	AudioChange ac;
 	public void BackScene() {
-        GameObject target1 = GameObject.Find ("FieldAudio");
-		target1.SetActive(false);
         FadeManager.Instance.LoadScene ("Title", 1.0f);
+		ac = GameObject.Find("FieldAudio").GetComponent<AudioChange>();
+        ac.OpDelay();
 	}
 }

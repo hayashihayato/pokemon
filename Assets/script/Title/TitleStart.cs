@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class TitleStart : MonoBehaviour
 {
-	public void Start() {
-        FadeManager.Instance.LoadScene ("Menu", 1.0f);
+	public void Start(){
+        FadeManager.Instance.LoadScene ("TitleMenu", 1.0f);
 	}
 }
 

@@ -15,9 +15,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Timeline", "Unity.Tim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Mathematics", "Unity.Mathematics.csproj", "{58f224dc-0f18-d5d8-5575-559ac5c2cc9e}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.SpriteShape.Runtime", "Unity.2D.SpriteShape.Runtime.csproj", "{bad38317-d19f-b828-7bd3-627f23e048fb}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{801151da-2f07-929e-dcb8-5acd43bd0c51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.SpriteShape.Runtime", "Unity.2D.SpriteShape.Runtime.csproj", "{bad38317-d19f-b828-7bd3-627f23e048fb}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Tilemap.Extras", "Unity.2D.Tilemap.Extras.csproj", "{f34817d9-c5e6-a8d5-fb17-d5c31555d4cc}"
 EndProject
@@ -86,10 +86,10 @@ Global
 		{b6d84280-1298-622d-95d5-328b8098546f}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58f224dc-0f18-d5d8-5575-559ac5c2cc9e}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{58f224dc-0f18-d5d8-5575-559ac5c2cc9e}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{bad38317-d19f-b828-7bd3-627f23e048fb}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{bad38317-d19f-b828-7bd3-627f23e048fb}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{801151da-2f07-929e-dcb8-5acd43bd0c51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{801151da-2f07-929e-dcb8-5acd43bd0c51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{bad38317-d19f-b828-7bd3-627f23e048fb}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{bad38317-d19f-b828-7bd3-627f23e048fb}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{f34817d9-c5e6-a8d5-fb17-d5c31555d4cc}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{f34817d9-c5e6-a8d5-fb17-d5c31555d4cc}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4d456a35-0bc2-86d3-bec7-54857f1f8afb}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

@@ -15,12 +15,13 @@ public class StartGame : MonoBehaviour
 	public void GameStart() {
         PlayerPrefs.SetFloat("PPosX", 0.5f);
         PlayerPrefs.SetFloat("PPosY", 0.5f);
+        PlayerPrefs.SetFloat("PLastX", 0f);
+        PlayerPrefs.SetFloat("PLastY", -1f);
         PlayerPrefs.Save();
         // SceneManager.LoadScene ("Field");
-        FadeManager.Instance.LoadScene ("Field", 1.0f);
+        FadeManager.Instance.LoadScene("Field", 1.0f);
 
-        GameObject target1 = GameObject.Find ("TitleAudio");
-		target1.SetActive(false);
+        GameObject target1 = GameObject.Find("TitleAudio");
+		//target1.SetActive(false);
     }
-
 }

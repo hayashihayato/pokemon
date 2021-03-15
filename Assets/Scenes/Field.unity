@@ -5207,6 +5207,7 @@ GameObject:
   - component: {fileID: 998574957}
   - component: {fileID: 998574959}
   - component: {fileID: 998574960}
+  - component: {fileID: 998574961}
   m_Layer: 0
   m_Name: FieldAudio
   m_TagString: Untagged
@@ -5350,6 +5351,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clips:
   - {fileID: 8300000, guid: c49063d5ae1e1a445954f0c1881e77a1, type: 3}
+--- !u!114 &998574961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998574956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81452b91b0be1914cbc22fab526aef23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1097903406 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1473525407715448598, guid: 0bd5e1d143e07f144b9406fa7335322b,

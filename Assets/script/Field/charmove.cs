@@ -18,9 +18,11 @@ public class charmove : MonoBehaviour
 
     void Start()
     {
-        this.transform.position = new Vector2(PlayerPrefs.GetFloat("PPosX"), PlayerPrefs.GetFloat("PPosY"));
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        this.transform.position = new Vector2(PlayerPrefs.GetFloat("PPosX"), PlayerPrefs.GetFloat("PPosY"));
+        anim.SetFloat("last_x", PlayerPrefs.GetFloat("PLastX"));
+        anim.SetFloat("last_y", PlayerPrefs.GetFloat("PLastY"));
     }
 
     void Update()
@@ -59,6 +61,8 @@ public class charmove : MonoBehaviour
     {
         PlayerPrefs.SetFloat("PPosX",this.transform.position.x);
         PlayerPrefs.SetFloat("PPosY", this.transform.position.y);
+        PlayerPrefs.SetFloat("PLastX", this.anim.GetFloat("last_x"));
+        PlayerPrefs.SetFloat("PLastY", this.anim.GetFloat("last_y"));
         PlayerPrefs.Save();
     }
 

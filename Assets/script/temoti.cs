@@ -15,9 +15,9 @@ public class temoti : MonoBehaviour {
         PokeFlag [(int) Pokemon.poke1] = true;
     }
     void b(){
-        if(i == 0 /*ポケモンゲット 連れてきた*/){
+        if(i == 0 /*ポケモンゲット 連れてきた時*/){
             PokeFlag [(int) Pokemon.poke1] = true;
-            this.gameObject.SetActive (true);
+            gameObject.SetActive (true);
 
         }
     }

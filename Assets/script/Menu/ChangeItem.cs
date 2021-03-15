@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ChangeItem : MonoBehaviour
 {
-    // Start is called before the first frame update
     public void Open(){
         this.gameObject.SetActive (true);
     }

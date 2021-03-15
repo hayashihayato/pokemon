@@ -80,10 +80,13 @@
     <Compile Include="Assets\script\Field\StartBattle.cs" />
     <Compile Include="Assets\script\Field\charmove.cs" />
     <Compile Include="Assets\script\Field\enemyencount.cs" />
+    <Compile Include="Assets\script\FieldAudioSingleton.cs" />
     <Compile Include="Assets\script\Menu\StartGame.cs" />
     <Compile Include="Assets\script\PokeStatusData.cs" />
     <Compile Include="Assets\script\RunBottun.cs" />
+    <Compile Include="Assets\script\SingletonMonoBehaviour.cs" />
     <Compile Include="Assets\script\Title\TitleStart.cs" />
+    <Compile Include="Assets\script\TitleSingleton.cs" />
     <None Include="Assets\Font\README.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

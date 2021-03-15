@@ -6,33 +6,18 @@ public class enemyencount : MonoBehaviour
 {
     [SerializeField]
     charmove cmsc;
-    GameObject go;
     AudioSource audios;
 
     public AudioClip[] clips;
     int i = 0,encP;
     int encount_num = 9;
-    int[] pokemonid = new int[] { 483, 484, 487 };
-    string[] pokemon = new string[] {
-        "ポッポ",
-        "ポッポ",
-        "ポッポ",
-        "ポッポ",
-        "ポッポ",
-        "コラッタ",
-        "コラッタ",
-        "コラッタ",
-        "コラッタ",
-        "ピカチュウ" };
+    int[] pokemonid = new int[] { 1,2,3,4,5,6,7,8,9,483, 484, 487 };
 
     void Start()
     {
-        go = GameObject.Find("FieldAudio");
-
-        audios = go.GetComponent<AudioSource>();
+        audios = GameObject.Find("FieldAudio").GetComponent<AudioSource>();
 
         cmsc = GameObject.Find("player").GetComponent<charmove>();
-
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -40,11 +25,10 @@ public class enemyencount : MonoBehaviour
         if(other.tag == "Player")
         {
             i = UnityEngine.Random.Range(0,100);
-            encP = Random.Range(0,2);
+            encP = Random.Range(0,13);
             Debug.Log(i);
             if(i <= encount_num) {
                 // 出現ポケモン表示
-                //Debug.Log(pokemon[i]);
 
                 //ポケモン抽選決定
                 SetPokeID(pokemonid[encP]);
@@ -57,6 +41,8 @@ public class enemyencount : MonoBehaviour
                 audios.clip = clips[0];
                 audios.Play();
 
+                //プレイヤーの位置保存
+                cmsc.SetPos();
                 // 動かなくしたい
                 cmsc.IsEncount = true;
 
@@ -70,7 +56,7 @@ public class enemyencount : MonoBehaviour
 
     void SetPokeID(int id)
     {
-        PlayerPrefs.SetInt("SCORE", id);
+        PlayerPrefs.SetInt("ENCID", id);
         PlayerPrefs.Save();
     }
 }

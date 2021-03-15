@@ -4,18 +4,12 @@ using UnityEngine;
 
 public class BattleEndMusic : MonoBehaviour
 {
-    public AudioClip[] clips;
-    AudioSource audios;
+    AudioChange ac;
 
-    void Start()
-    {
-        audios = GetComponent<AudioSource>();
+    void Start(){
     }
-    public void Button1Click()
-    {
-        GameObject target1 = GameObject.Find ("FieldAudio");
-		target1.SetActive(false);
-        audios.clip = clips[0];
-        audios.Play();
+    public void Button1Click(){
+        ac = GameObject.Find("FieldAudio").GetComponent<AudioChange>();
+        ac.WinSound();
     }
 }

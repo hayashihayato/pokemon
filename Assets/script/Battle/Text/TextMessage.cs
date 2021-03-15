@@ -21,9 +21,13 @@ public class TextMessage : MonoBehaviour
     void textsay2(){
         ctext.text = "What will Pikachu do?";
     }
+<<<<<<< HEAD
 
     void find()
     {
+=======
+    void find(){
+>>>>>>> 64bd0341afd0c931ef40e0d56b0b93c031eb68a9
         int PokeID = PlayerPrefs.GetInt("ENCID");
         pokedata = Resources.Load<PokeStatusData>("PokeStatusData");
         pokestatus = pokedata.PokeStatusList[PokeID];

@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/battle.unity
-=======
-- path: Assets/Scenes/Menu.unity
->>>>>>> 64bd0341afd0c931ef40e0d56b0b93c031eb68a9
+- path: Assets/Scenes/Field.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

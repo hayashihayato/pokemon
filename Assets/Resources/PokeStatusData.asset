@@ -32,76 +32,76 @@ MonoBehaviour:
     speed: 45
     image: {fileID: 21300000, guid: 137928eab3316dc4294a3a20b3fc1b58, type: 3}
   - Name: Ivysaur
-    ID: 0
-    maxHp: 0
-    atk: 0
-    def: 0
-    spatk: 0
-    spdef: 0
-    speed: 0
+    ID: 2
+    maxHp: 60
+    atk: 62
+    def: 63
+    spatk: 80
+    spdef: 80
+    speed: 60
     image: {fileID: 21300000, guid: 4254412479fd25647b924e9117215ab9, type: 3}
   - Name: Venusaur
-    ID: 0
-    maxHp: 0
-    atk: 0
-    def: 0
-    spatk: 0
-    spdef: 0
-    speed: 0
+    ID: 3
+    maxHp: 80
+    atk: 82
+    def: 83
+    spatk: 100
+    spdef: 100
+    speed: 80
     image: {fileID: 21300000, guid: afa56f63f56116745a8a357785419e80, type: 3}
   - Name: Charmander
-    ID: 0
-    maxHp: 0
-    atk: 0
-    def: 0
-    spatk: 0
-    spdef: 0
-    speed: 0
+    ID: 4
+    maxHp: 39
+    atk: 52
+    def: 43
+    spatk: 60
+    spdef: 50
+    speed: 65
     image: {fileID: 21300000, guid: e4a75cd771243f44990534ebfa45803f, type: 3}
   - Name: Charmeleon
-    ID: 0
-    maxHp: 0
-    atk: 0
-    def: 0
-    spatk: 0
-    spdef: 0
-    speed: 0
+    ID: 5
+    maxHp: 58
+    atk: 64
+    def: 58
+    spatk: 80
+    spdef: 65
+    speed: 80
     image: {fileID: 21300000, guid: 5ba1d46572034594a91ecbca5176e051, type: 3}
   - Name: Charizard
-    ID: 0
-    maxHp: 0
-    atk: 0
-    def: 0
-    spatk: 0
-    spdef: 0
-    speed: 0
+    ID: 6
+    maxHp: 78
+    atk: 84
+    def: 78
+    spatk: 109
+    spdef: 85
+    speed: 100
     image: {fileID: 21300000, guid: da19fd1ac8fa0114681f7dfcc97588c6, type: 3}
   - Name: Squirtle
-    ID: 0
-    maxHp: 0
-    atk: 0
-    def: 0
-    spatk: 0
-    spdef: 0
-    speed: 0
+    ID: 7
+    maxHp: 44
+    atk: 48
+    def: 65
+    spatk: 50
+    spdef: 64
+    speed: 43
     image: {fileID: 21300000, guid: 9928b29426d34984fb19d39dca3e1cc7, type: 3}
   - Name: Wartortle
-    ID: 0
-    maxHp: 0
-    atk: 0
-    def: 0
-    spatk: 0
-    spdef: 0
-    speed: 0
+    ID: 8
+    maxHp: 59
+    atk: 63
+    def: 80
+    spatk: 65
+    spdef: 80
+    speed: 58
     image: {fileID: 21300000, guid: 13c57196826afaf48872293db8c69439, type: 3}
   - Name: Blastoise
-    ID: 0
-    maxHp: 0
-    atk: 0
-    def: 0
-    spatk: 0
-    spdef: 0
-    speed: 0
+    ID: 9
+    maxHp: 79
+    atk: 83
+    def: 100
+    spatk: 85
+    spdef: 105
+    speed: 78
     image: {fileID: 21300000, guid: 1067d65d3a56f554198a423e888d3c61, type: 3}
   - Name: 
     ID: 0
@@ -4362,21 +4362,21 @@ MonoBehaviour:
     image: {fileID: 0}
   - Name: Dialga
     ID: 483
-    maxHp: 20
-    atk: 10
-    def: 10
-    spatk: 10
-    spdef: 10
-    speed: 10
+    maxHp: 100
+    atk: 120
+    def: 120
+    spatk: 150
+    spdef: 100
+    speed: 90
     image: {fileID: 21300000, guid: 9066f670ff957124ab6e6dd37b06c438, type: 3}
   - Name: Palkia
     ID: 484
-    maxHp: 20
-    atk: 10
-    def: 10
-    spatk: 10
-    spdef: 10
-    speed: 10
+    maxHp: 90
+    atk: 120
+    def: 100
+    spatk: 150
+    spdef: 120
+    speed: 100
     image: {fileID: 21300000, guid: 2892fa357c29d8c4192478371e770cf7, type: 3}
   - Name: 
     ID: 0
@@ -4398,12 +4398,12 @@ MonoBehaviour:
     image: {fileID: 0}
   - Name: Giratina
     ID: 487
-    maxHp: 20
-    atk: 10
-    def: 10
-    spatk: 10
-    spdef: 10
-    speed: 10
+    maxHp: 150
+    atk: 100
+    def: 120
+    spatk: 100
+    spdef: 120
+    speed: 90
     image: {fileID: 21300000, guid: 9a8b89e2eb6d3314086d93945dd0f75c, type: 3}
   - Name: 
     ID: 0

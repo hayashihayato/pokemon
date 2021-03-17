@@ -49,6 +49,7 @@
      <Compile Include="Assets\script\Battle\Text\MyLevelText.cs" />
      <Compile Include="Assets\script\Battle\Text\MyName.cs" />
      <Compile Include="Assets\script\Battle\Text\TextMessage.cs" />
+     <Compile Include="Assets\script\DamegeCalc.cs" />
      <Compile Include="Assets\script\Field\AudioChange.cs" />
      <Compile Include="Assets\script\Field\BackTitle.cs" />
      <Compile Include="Assets\script\Field\ChangeMenu.cs" />
@@ -56,17 +57,17 @@
      <Compile Include="Assets\script\Field\MusicDontDestroy.cs" />
      <Compile Include="Assets\script\Field\StartBattle.cs" />
      <Compile Include="Assets\script\Field\enemyencount.cs" />
-     <Compile Include="Assets\script\Menu\BackMenu.cs" />
+     <Compile Include="Assets\script\Menu\Back.cs" />
      <Compile Include="Assets\script\Menu\ChangeDex.cs" />
      <Compile Include="Assets\script\Menu\ChangeField.cs" />
      <Compile Include="Assets\script\Menu\ChangeItem.cs" />
      <Compile Include="Assets\script\Menu\ChangePokemon.cs" />
+     <Compile Include="Assets\script\MyPokeStatus.cs" />
      <Compile Include="Assets\script\Other\PokeStatusData.cs" />
      <Compile Include="Assets\script\Other\Singleton.cs" />
      <Compile Include="Assets\script\Other\SingletonMonoBehaviour.cs" />
      <Compile Include="Assets\script\Title\TitleStart.cs" />
      <Compile Include="Assets\script\TitleMenu\StartGame.cs" />
-     <Compile Include="Assets\script\temoti.cs" />
      <None Include="Assets\Font\README.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

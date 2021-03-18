@@ -63,6 +63,7 @@
      <Compile Include="Assets\script\Menu\ChangeItem.cs" />
      <Compile Include="Assets\script\Menu\ChangePokemon.cs" />
      <Compile Include="Assets\script\MyPokeStatus.cs" />
+     <Compile Include="Assets\script\Other\PokeMoveData.cs" />
      <Compile Include="Assets\script\Other\PokeStatusData.cs" />
      <Compile Include="Assets\script\Other\Singleton.cs" />
      <Compile Include="Assets\script\Other\SingletonMonoBehaviour.cs" />

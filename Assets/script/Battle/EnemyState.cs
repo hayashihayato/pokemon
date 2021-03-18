@@ -21,27 +21,26 @@ public class EnemyState : MonoBehaviour
     [SerializeField] Text SpDefText;
     [SerializeField] Text SpeedText;
 
-    string PokeName;
-    string Nickname;
-    int Level;
-    int HP;
-    int Atk;
-    int Def;
-    int SpAtk;
-    int SpDef;
-    int Speed;
-    int Id;
-    int[] PP = new int[4];
+    public string PokeName;
+    public string Nickname;
+    public int Level;
+    public int HP;
+    public int Atk;
+    public int Def;
+    public int SpAtk;
+    public int SpDef;
+    public int Speed;
+    public int Id;
 
-    private void Start()
-    {
+    private void Start() {
         Find();
         InitPokeData();
+    }
+    private void Update() {
         Draw();
     }
 
-    void InitPokeData()
-    {
+    void InitPokeData() {
         this.Level = 50;
         this.PokeName = pokestatus.Name;
         this.Nickname = pokestatus.Name;
@@ -57,8 +56,7 @@ public class EnemyState : MonoBehaviour
         // 能力値 = {(種族値×2＋個体値＋努力値÷4)×レベル÷100＋5}
     }
 
-    void Draw()
-    {
+    void Draw() {
         PokeImage.sprite = pokestatus.image;
 
         LevelText.text = (Level.ToString());
@@ -74,20 +72,17 @@ public class EnemyState : MonoBehaviour
         SpeedText.text = Speed.ToString();
     }
 
-    void Find()
-    {
-        int PokeID = PlayerPrefs.GetInt("ENCID");
-        pokedata = Resources.Load<PokeStatusData>("PokeStatusData");
-        pokestatus = pokedata.PokeStatusList[PokeID];
+    void Find() {
+        int PokeID = PlayerPrefs.GetInt("ENCID");   // ENCIDを取得してPokeIDに挿入
+        pokedata = Resources.Load<PokeStatusData>("PokeStatusData");    // PokeStatusDataのScriptableの中身を取得して挿入
+        pokestatus = pokedata.PokeStatusList[PokeID];   // pokestatusに取得したIDのpokedataを挿入
 
 
         
         /*var guids = UnityEditor.AssetDatabase.FindAssets("t:PokeStatusData");
-        if (guids.Length == 0)
-        {
+        if (guids.Length == 0) {
             throw new System.IO.FileNotFoundException("PokeData does not found");
         }
-
         var path = AssetDatabase.GUIDToAssetPath(guids[0]);
         pokedata = AssetDatabase.LoadAssetAtPath<PokeData>(path);*/
     }

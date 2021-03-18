@@ -21,22 +21,22 @@ public class MyPokeStatus : MonoBehaviour
     [SerializeField] Text SpDefText;
     [SerializeField] Text SpeedText;
 
-    string PokeName;
-    string Nickname;
-    int Level;
-    int HP;
-    int Atk;
-    int Def;
-    int SpAtk;
-    int SpDef;
-    int Speed;
-    int Id;
-    int[] PP = new int[4];
-
+    public string PokeName;
+    public string Nickname;
+    public int Level;
+    public int HP;
+    public int Atk;
+    public int Def;
+    public int SpAtk;
+    public int SpDef;
+    public int Speed;
+    public int Id;
     private void Start()
     {
         Find();
         InitPokeData();
+    }
+    private void Update() {
         Draw();
     }
 
@@ -93,5 +93,3 @@ public class MyPokeStatus : MonoBehaviour
 }
 
 
-
-// ダメージ = (((レベル x 2 / 5 + 2) x 技威力 x 攻撃実数値(自) x 防御実数値(敵)) / 50 + 2) x 相性補正

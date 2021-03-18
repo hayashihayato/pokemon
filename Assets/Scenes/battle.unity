@@ -371,6 +371,7 @@ GameObject:
   - component: {fileID: 167450835}
   - component: {fileID: 167450834}
   - component: {fileID: 167450833}
+  - component: {fileID: 167450836}
   m_Layer: 5
   m_Name: MessageText
   m_TagString: Untagged
@@ -438,6 +439,18 @@ RectTransform:
   m_AnchoredPosition: {x: -187.60999, y: -213.10002}
   m_SizeDelta: {x: 313.1667, y: 98}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &167450836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167450832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f52d71e606fa4a4ba67a14264094421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &185884677
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,6 +884,50 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1444756253}
+        m_MethodName: MyAtk
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1421708025}
+        m_MethodName: Backmenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1261874277}
+        m_MethodName: Backmenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 167450836}
+        m_MethodName: Backmenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &307837363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -948,6 +1005,16 @@ MonoBehaviour:
   SpAtkText: {fileID: 1850560445}
   SpDefText: {fileID: 513014006}
   SpeedText: {fileID: 1996512234}
+  PokeName: 
+  Nickname: 
+  Level: 0
+  HP: 0
+  Atk: 0
+  Def: 0
+  SpAtk: 0
+  SpDef: 0
+  Speed: 0
+  Id: 0
 --- !u!4 &330094059
 Transform:
   m_ObjectHideFlags: 0
@@ -2940,6 +3007,7 @@ GameObject:
   - component: {fileID: 1261874276}
   - component: {fileID: 1261874275}
   - component: {fileID: 1261874274}
+  - component: {fileID: 1261874277}
   m_Layer: 5
   m_Name: AttackListWindow
   m_TagString: Untagged
@@ -3019,6 +3087,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261874272}
   m_CullTransparentMesh: 0
+--- !u!114 &1261874277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261874272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f52d71e606fa4a4ba67a14264094421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1268279343
 GameObject:
   m_ObjectHideFlags: 0
@@ -3184,6 +3264,7 @@ GameObject:
   - component: {fileID: 1421708022}
   - component: {fileID: 1421708024}
   - component: {fileID: 1421708023}
+  - component: {fileID: 1421708025}
   m_Layer: 5
   m_Name: window1
   m_TagString: Untagged
@@ -3251,6 +3332,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1421708021}
   m_CullTransparentMesh: 0
+--- !u!114 &1421708025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421708021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f52d71e606fa4a4ba67a14264094421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1424576189
 GameObject:
   m_ObjectHideFlags: 0
@@ -3344,6 +3437,7 @@ GameObject:
   - component: {fileID: 1444756250}
   - component: {fileID: 1444756251}
   - component: {fileID: 1444756252}
+  - component: {fileID: 1444756253}
   m_Layer: 0
   m_Name: GameSystem
   m_TagString: Untagged
@@ -3439,6 +3533,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d92fc34981107441a0dc19bb1109cf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1444756253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444756245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2bf2cf0ec0736043b9d2948a212e4b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1474982682
@@ -3926,6 +4032,16 @@ MonoBehaviour:
   SpAtkText: {fileID: 1854110168}
   SpDefText: {fileID: 2058744822}
   SpeedText: {fileID: 956565153}
+  PokeName: 
+  Nickname: 
+  Level: 0
+  HP: 0
+  Atk: 0
+  Def: 0
+  SpAtk: 0
+  SpDef: 0
+  Speed: 0
+  Id: 0
 --- !u!4 &1738896522
 Transform:
   m_ObjectHideFlags: 0

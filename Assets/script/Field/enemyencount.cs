@@ -49,7 +49,6 @@ public class enemyencount : MonoBehaviour
 
             }
             else {
-                //Debug.Log("出現なし");
                 cmsc.IsEncount = false;
             }
         }

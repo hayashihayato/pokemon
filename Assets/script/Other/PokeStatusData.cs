@@ -19,5 +19,6 @@ public class PokeStatus{
 	public int spdef;
 	public int speed;
     public Sprite image;
+    public Sprite myimage;
 }
 

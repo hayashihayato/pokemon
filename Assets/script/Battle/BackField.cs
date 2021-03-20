@@ -5,7 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class BackField : MonoBehaviour
 {
-	public void BackScene() {
+	public void BcField() {
         FadeManager.Instance.LoadScene ("Field", 1.0f);
+	}
+	public void BcTitle() {
+        FadeManager.Instance.LoadScene ("Title", 2.0f);
 	}
 }

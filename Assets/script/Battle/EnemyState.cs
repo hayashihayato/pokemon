@@ -31,6 +31,7 @@ public class EnemyState : MonoBehaviour
     public int SpDef;
     public int Speed;
     public int Id;
+    public UnityEngine.UI.Image pokeimage;
 
     private void Start() {
         Find();
@@ -45,6 +46,7 @@ public class EnemyState : MonoBehaviour
         this.PokeName = pokestatus.Name;
         this.Nickname = pokestatus.Name;
         this.Id = pokestatus.ID;
+        this.pokeimage = PokeImage;
 
         this.HP = (pokestatus.maxHp * 2 + 31 + 0 /4) * Level / 100 + Level + 10;
         // 能力値 = (種族値×2＋個体値＋努力値÷4)×レベル÷100＋レベル＋10

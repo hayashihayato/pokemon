@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEditor;
+using UnityEngine.SceneManagement;
 
 public class MyPokeStatus : MonoBehaviour
 {
@@ -31,8 +32,7 @@ public class MyPokeStatus : MonoBehaviour
     public int SpDef;
     public int Speed;
     public int Id;
-    private void Start()
-    {
+    private void Start() {
         Find();
         InitPokeData();
     }
@@ -57,10 +57,13 @@ public class MyPokeStatus : MonoBehaviour
         // 能力値 = {(種族値×2＋個体値＋努力値÷4)×レベル÷100＋5}
     }
 
-    void Draw()
-    {
-        PokeImage.sprite = pokestatus.image;
-
+    void Draw() {
+        if(SceneManager.GetActiveScene().name == "Battle"){
+            PokeImage.sprite = pokestatus.myimage;
+        }
+        else {
+            PokeImage.sprite = pokestatus.image;
+        }
         LevelText.text = (Level.ToString());
         NameText.text = this.PokeName;
         NickNameText.text = this.Nickname;
@@ -77,18 +80,7 @@ public class MyPokeStatus : MonoBehaviour
     void Find()
     {
         pokedata = Resources.Load<PokeStatusData>("PokeStatusData");
-        pokestatus = pokedata.PokeStatusList[1];
-
-
-        
-        /*var guids = UnityEditor.AssetDatabase.FindAssets("t:PokeStatusData");
-        if (guids.Length == 0)
-        {
-            throw new System.IO.FileNotFoundException("PokeData does not found");
-        }
-
-        var path = AssetDatabase.GUIDToAssetPath(guids[0]);
-        pokedata = AssetDatabase.LoadAssetAtPath<PokeData>(path);*/
+        pokestatus = pokedata.PokeStatusList[6];
     }
 }
 

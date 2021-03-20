@@ -15,6 +15,8 @@ public class Charmove : MonoBehaviour
 
     public bool IsEncount = false;
 
+    public int CArea; 
+
     void Start(){
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();

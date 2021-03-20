@@ -22,8 +22,8 @@ public class StartGame : MonoBehaviour
         ac.FieldDelay();
     }
     void SetFirstPos(){
-        PlayerPrefs.SetFloat("PPosX", 0.5f);
-        PlayerPrefs.SetFloat("PPosY", 0.5f);
+        PlayerPrefs.SetFloat("PPosX", -4.5f);
+        PlayerPrefs.SetFloat("PPosY", -18.0f);
         PlayerPrefs.SetFloat("PLastX", 0f);
         PlayerPrefs.SetFloat("PLastY", -1f);
         PlayerPrefs.Save();

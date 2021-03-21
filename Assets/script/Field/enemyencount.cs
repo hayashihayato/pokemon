@@ -13,7 +13,7 @@ public class enemyencount : MonoBehaviour
     public AudioClip[] clips;
     int i = 0,encP;
     int encount_num = 9;
-    int[] pokemonid = new int[] { 1,2,3,4,5,6,7,8,9/*,483, 484, 487*/ };
+    int[] pokemonid = new int[] { 1,4,7};
 
     void Start(){
         audios = GameObject.Find("FieldAudio").GetComponent<AudioSource>();
@@ -24,7 +24,7 @@ public class enemyencount : MonoBehaviour
         if(other.tag == "Player")
         {
             i = UnityEngine.Random.Range(0,100);
-            encP = Random.Range(0,12);
+            encP = Random.Range(0,3);
             Debug.Log(i);
             if(i <= encount_num) {
                 // 出現ポケモン表示

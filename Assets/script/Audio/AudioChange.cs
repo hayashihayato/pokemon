@@ -8,6 +8,8 @@ public class AudioChange : MonoBehaviour
     AudioClip[] clips;
     AudioSource audios;
     AreaManage am;
+    Charmove cm;
+    CurrentArea ca;
     int AUdioID;
 
     void Start(){
@@ -48,5 +50,13 @@ public class AudioChange : MonoBehaviour
     public void BgmChange(int AudioID){
             audios.clip = clips[AudioID];
             audios.Play();
+    }
+    public void AreaBgm(){
+            ca = GameObject.Find("CurrentArea").GetComponent<CurrentArea>();
+            audios.clip = clips[ca.caID];
+            audios.Play();
+    }
+    public void DelayArea(float time){
+        Invoke("AreaBgm",time);
     }
 }

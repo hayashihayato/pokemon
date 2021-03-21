@@ -7,14 +7,17 @@ public class StartGame : MonoBehaviour
 {
     AudioChange ac;
     AudioSource audios;
+    PokeDeckData pd;
 	public AudioClip[] clips;
 
 
     void Start(){
         audios = GetComponent<AudioSource>();
+        pd = GameObject.Find("MyPokeDeckData").GetComponent<PokeDeckData>();
     }
 	public void GameStart(){
         SetFirstPos();
+        pd.Init();
 
         FadeManager.Instance.LoadScene ("Field", 2.0f);
 

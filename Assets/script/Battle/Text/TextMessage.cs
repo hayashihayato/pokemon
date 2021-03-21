@@ -9,7 +9,7 @@ public class TextMessage : MonoBehaviour
     Text ctext;
     PokeStatusData Enpokedata;
     PokeStatus Enpokestatus;
-    MyPokeStatus Mypoke;
+    PokeDeckData Mypoke;
     EnemyState Enpoke;
     DamegeCalc dc;
 
@@ -23,18 +23,18 @@ public class TextMessage : MonoBehaviour
         ctext.text = "Wild " + Enpokestatus.Name + "\nappeared!";
     }
     public void textsay2(){
-        if(Enpoke.HP > 0 & Mypoke.HP > 0)
+        if(Enpoke.HP > 0 & Mypoke.hp > 0)
         ctext.text = "What will \n" + Mypoke.Nickname +" do?";
     }
     public void textsay3(){
         ctext.text = dc.dmg + " damage！";
     }
     public void textsay4(){
-        if(Enpoke.HP > 0 & Mypoke.HP > 0)
-        ctext.text = Mypoke.Nickname + " Used " + dc.move.MoveName + "！";
+        if(Enpoke.HP > 0 & Mypoke.hp > 0)
+        ctext.text = Mypoke.Nickname + " Used " + Mypoke.move1.MoveName + "！";
     }
     public void textsay5(){
-        if(Enpoke.HP > 0 & Mypoke.HP > 0)
+        if(Enpoke.HP > 0 & Mypoke.hp > 0)
         ctext.text = Enpokestatus.Name + " Used " + dc.move.MoveName + "！";
     }
     public void textsay6(){
@@ -44,12 +44,15 @@ public class TextMessage : MonoBehaviour
         ctext.text = Mypoke.Nickname + " fainted！\nPlayer whited out...";
     }
     
+
+    
     void find(){
         int PokeID = PlayerPrefs.GetInt("ENCID");
         Enpokedata = Resources.Load<PokeStatusData>("PokeStatusData");
         Enpokestatus = Enpokedata.PokeStatusList[PokeID];
 
-        Mypoke = GameObject.Find("MyPokeController").GetComponent<MyPokeStatus>();
+        Mypoke = GameObject.Find("MyPokeDeckData").GetComponent<PokeDeckData>();
+
         Enpoke = GameObject.Find("EnemyController").GetComponent<EnemyState>();
 
         dc = GameObject.Find("GameSystem").GetComponent<DamegeCalc>();

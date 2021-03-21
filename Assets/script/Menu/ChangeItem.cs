@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ChangeItem : MonoBehaviour
 {
-    MyPokeStatus Mypoke;
+    // MyPokeStatus Mypoke;
+    PokeDeckData Mypoke;
     EnemyState Enpoke;
     void Start() {
 
@@ -16,9 +17,9 @@ public class ChangeItem : MonoBehaviour
         this.gameObject.SetActive (false);
     }
     public void DelayOpen(){
-        Mypoke = GameObject.Find("MyPokeController").GetComponent<MyPokeStatus>();  // 自分ポケモンのステータス取得
+        Mypoke = GameObject.Find("MyPokeDeckData").GetComponent<PokeDeckData>();  // 自分ポケモンのステータス取得
         Enpoke = GameObject.Find("EnemyController").GetComponent<EnemyState>();     // 敵ポケモンのステータス取得
-        if(Enpoke.HP > 0 & Mypoke.HP > 0)
+        if(Enpoke.HP > 0 & Mypoke.hp > 0)
         this.gameObject.SetActive (true);
     }
     void Update(){

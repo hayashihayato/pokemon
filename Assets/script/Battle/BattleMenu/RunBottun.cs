@@ -13,7 +13,7 @@ public class RunBottun : MonoBehaviour
     }
     public void main(){
         FadeManager.Instance.LoadScene ("Field", 1.0f);
-        ac.DelayArea(1.0f);
+        // ac.DelayArea(1.0f);
         se.Invoke("Sound2",0.1f);
     }
 }

@@ -108,7 +108,7 @@ public class BattleFlow : MonoBehaviour
             ei.Close();
             text.textsay6();
             bf.Invoke("BcField",3f);
-            ac.DelayArea(4.0f); // 直す
+            // ac.DelayArea(4.0f); // 直す
             
             // 今のHPやらexpを保存しておくのを描く
             // pd.Poke1update();
